@@ -8,9 +8,9 @@ header {
 h1 {
     margin: 0 auto;
     font-size: 3.75em;
-    color: rgb(4, 170, 4);
-    text-shadow: 0 0 4px rgb(0, 0, 0), 0 0 30px rgb(204, 1, 170);
-    padding: .25em .25em 0 .25em;
+    color: rgb(255, 4, 4);
+    text-shadow: 0 0 4px rgb(0, 0, 0), 0 4px 0px rgb(0, 0, 0);
+    padding: .25em .5em .75em .5em;
     text-align: center;
 }
 .main {
