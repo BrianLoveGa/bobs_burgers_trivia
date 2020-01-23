@@ -46,7 +46,7 @@ const questions = [
     `images/human.jpeg`
   ),
   new Question(
-    `What is the name of the local amusement park?`,
+    `What is the name of the local amusement park with the ferris wheel?`,
     [`Play Pier`, `Wonder Park`, `Fun Wharf`, `Wonder Wharf`],
     `Wonder Wharf`,
     `images/ww.jpg`
@@ -92,7 +92,7 @@ const questions = [
     `images/Jimmy_Pesto.png`
   ),
   new Question(
-    `Where does this guy work?`,
+    `Where does this guy work? Hint it's a bank.`,
     [
       `First Bank of Wonder Wharf`,
       `First Oceanside Savings Bank`,
@@ -103,110 +103,112 @@ const questions = [
     `images/Dowling.jpg`
   ),
   new Question(
-    `What name does Dr. Yap have for his blue Yamaha Pacifica guitar?`,
+    `What name does this dentist have for his blue Yamaha Pacifica guitar?`,
     [`Slow Hand`, `Betsy`, `Tina`, `Greta`],
     `Greta`,
     `images/Dr._Yap2.png`
   )
 ];
 
-// class for character quiz
+//class for character quiz
 
-// class CharQuestion {
-//   constructor(cQuestionAsked, cChoices, cAnswer, cImage) {
-//     this.cQuestionAsked = cQuestionAsked;
-//     this.cChoices = cChoices;
-//     this.cAnswer = cAnswer;
-//     this.cImage = cImage;
-//   }
-// }
-// // character quiz questions
-// const charQuestions = [
-//   new CharQuestion(
-//     `Who is this a picture of?`,
-//     [`Mr Frond`, `Mr Branca`, `Mr Green`, `Mr Burger`],
-//     `Mr Branca`,
-//     `images/Mr_Branca.jpg`
-//   ),
-//   new CharQuestion(
-//     `What is this characters name?`,
-//     [`Marshmallow`, `Sprinkles`, `Stretch`, `Cha-Cha`],
-//     `Marshmallow`,
-//     `images/Marshmellow.jpg`
-//   ),
-//   new CharQuestion(
-//     `Who voices this character? aka Mike the Mailman...`,
-//     [`Tim Robbins`, `Tim Meadows`, `James Earl Jones`, `Bill Bellamy`],
-//     `Tim Meadows`,
-//     `images/Mike.jpg`
-//   ),
-//   new CharQuestion(
-//     `Who is this a picture of?`,
-//     [`Gayle`, `Gloria`, `Linda`, `Gracie`],
-//     `Gayle`,
-//     `images/Gayle.png`
-//   ),
-//   new CharQuestion(
-//     `What is this characters name?`,
-//     [`Tina`, `Stacey`, `Millie`, `Louise`],
-//     `Louise`,
-//     `images/Louise.jpg`
-//   ),
-//   new CharQuestion(
-//     `Who is this a picture of?`,
-//     [`Darryl`, `Zeke`, `Josh`, `Mr. Fischoeder`],
-//     `Darryl`,
-//     `images/Darryl-2.jpg`
-//   ),
-//   new CharQuestion(
-//     `What is this characters name?`,
-//     [`James`, `Frank`, `Trev`, `Kevin`],
-//     `Trev`,
-//     `images/Trev.jpg`
-//   ),
-//   new CharQuestion(
-//     `What is Jimmy Pesto's real name?`,
-//     [`James Pastafarian`, `Jim Johnston`, `Jim Parsons`, `James Poplopovich`],
-//     `James Poplopovich`,
-//     `images/Jimmy_Pesto.png`
-//   ),
-//   new CharQuestion(
-//     `Who provides the voice for the Moody Foodie?`,
-//     [`Jim Parsons`, `Patton Oswalt`, `Jim Gaffigan`, `Sarah Silverman`],
-//     `Patton Oswalt`,
-//     `images/moodfood.jpeg`
-//   ),
-//   new CharQuestion(
-//     `Who is this a picture of?`,
-//     [`Dr. Hibbert`, `Doc Brown`, `Dr. Doom`, `Dr. Yap`],
-//     `Dr. Yap`,
-//     `images/Dr._Yap2.png`
-//   )
-// ];
+class CharQuestion {
+  constructor(cQuestionAsked, cChoices, cAnswer, cImage) {
+    this.cQuestionAsked = cQuestionAsked;
+    this.cChoices = cChoices;
+    this.cAnswer = cAnswer;
+    this.cImage = cImage;
+  }
+}
+// character quiz questions
+const charQuestions = [
+  new CharQuestion(
+    `Who is this a picture of? Hint he's the school janitor.`,
+    [`Mr. Frond`, `Mr. Branca`, `Mr. Green`, `Mr. Burger`],
+    `Mr. Branca`,
+    `images/Mr_Branca.jpg`
+  ),
+  new CharQuestion(
+    `What is this characters name?`,
+    [`Marshmallow`, `Sprinkles`, `Stretch`, `Cha-Cha`],
+    `Marshmallow`,
+    `images/Marshmellow.jpg`
+  ),
+  new CharQuestion(
+    `Who voices this character? aka Mike the Mailman.`,
+    [`Tim Robbins`, `Tim Meadows`, `James Earl Jones`, `Bill Bellamy`],
+    `Tim Meadows`,
+    `images/Mike.jpg`
+  ),
+  new CharQuestion(
+    `Who is this a picture of? Who is Linda's sister?`,
+    [`Gayle`, `Gloria`, `Linda`, `Gracie`],
+    `Gayle`,
+    `images/Gayle.png`
+  ),
+  new CharQuestion(
+    `What is this characters name?`,
+    [`Tina`, `Stacey`, `Millie`, `Louise`],
+    `Louise`,
+    `images/Louise.jpg`
+  ),
+  new CharQuestion(
+    `Who is this a picture of? Hint he is one of Louise's classmates.`,
+    [`Darryl`, `Zeke`, `Josh`, `Mr. Fischoeder`],
+    `Darryl`,
+    `images/Darryl-2.jpg`
+  ),
+  new CharQuestion(
+    `What is this characters name? Hint he is the bartender at Pesto's`,
+    [`James`, `Frank`, `Trev`, `Kevin`],
+    `Trev`,
+    `images/Trev.jpg`
+  ),
+  new CharQuestion(
+    `Speaking of Pesto ... what is Jimmy Pesto's real name?`,
+    [`James Pastafarian`, `Jim Johnston`, `Jim Parsons`, `James Poplopovich`],
+    `James Poplopovich`,
+    `images/Jimmy_Pesto.png`
+  ),
+  new CharQuestion(
+    `Who provides the voice for the Moody Foodie? Hint he has also payed an animated rat and penguin in other movies/shows.`,
+    [`Jim Parsons`, `Patton Oswalt`, `Jim Gaffigan`, `Sarah Silverman`],
+    `Patton Oswalt`,
+    `images/moodfood.jpeg`
+  ),
+  new CharQuestion(
+    `Who is this a picture of? Hint who's the Belcher's Dentist?`,
+    [`Dr. Hibbert`, `Doc Brown`, `Dr. Doom`, `Dr. Yap`],
+    `Dr. Yap`,
+    `images/Dr._Yap2.png`
+  )
+];
 
 // initiate game - general q's
 function startGame() {
+  resetGame();
   game.style.display = "block";
   // hide irrelevant content
   instructions.style.display = "none";
   start.style.display = "none";
-  //go.style.display = "none";
+  go.style.display = "none";
   nextQuestion(); // run function to show first general question
 }
 
 start.addEventListener("click", startGame); // start button click
 
-// // initate characters quiz
-// function startCharGame() {
-//   game.style.display = "block";
-//   // hide irrelevant content
-//   go.style.display = "none";
-//   instructions.style.display = "none";
-//   start.style.display = "none";
-//   nextCharQuestion(); // run function to show first character question
-// }
+// initate characters quiz
+function startCharGame() {
+  resetGame();
+  game.style.display = "block";
+  // hide irrelevant content
+  go.style.display = "none";
+  instructions.style.display = "none";
+  start.style.display = "none";
+  nextCharQuestion(); // run function to show first character question
+}
 
-// go.addEventListener("click", startCharGame); // go button click
+go.addEventListener("click", startCharGame); // go button click
 
 // Render/append a question incrementally as the user selects "load next question" auto for general quiz
 function renderQuestion() {
@@ -230,27 +232,27 @@ function renderQuestion() {
   }
 }
 
-///// Render for the Characters quiz
-// function renderCharQuestion() {
-//   if (currentCharQuestionIndex < charQuestions.length) {
-//     currentCharQuestion = charQuestions[currentCharQuestionIndex];
-//     let renderedQuestion = document.createElement("div");
-//     let questionText = document.createElement("h2");
-//     let questionImage = document.createElement("IMG");
-//     let cChoices = document.createElement("div");
-//     questionText.innerHTML = currentQuestion.cQuestionAsked;
-//     renderedQuestion.className = "question";
-//     questionImage.setAttribute("src", `${currentQuestion.cImage}`);
-//     cChoices.className = "choices";
-//     quiz.appendChild(renderedQuestion);
-//     renderedQuestion.appendChild(questionText);
-//     renderedQuestion.appendChild(questionImage);
-//     renderedQuestion.appendChild(cChoices);
-//     renderCharAnswers();
-//   } else {
-//     endGame();
-//   }
-// }
+/// Render for the Characters quiz
+function renderCharQuestion() {
+  if (currentCharQuestionIndex < charQuestions.length) {
+    currentCharQuestion = charQuestions[currentCharQuestionIndex];
+    let renderedQuestion = document.createElement("div");
+    let questionText = document.createElement("h2");
+    let questionImage = document.createElement("IMG");
+    let choices = document.createElement("div");
+    questionText.innerHTML = currentCharQuestion.cQuestionAsked;
+    renderedQuestion.className = "question";
+    questionImage.setAttribute("src", `${currentCharQuestion.cImage}`);
+    choices.className = "choices";
+    quiz.appendChild(renderedQuestion);
+    renderedQuestion.appendChild(questionText);
+    renderedQuestion.appendChild(questionImage);
+    renderedQuestion.appendChild(choices);
+    renderCharAnswers();
+  } else {
+    endGame();
+  }
+}
 
 // Render/append answers to the current question general quiz
 function renderAnswers() {
@@ -265,19 +267,19 @@ function renderAnswers() {
   }
 }
 
-// // Render answers for Character quiz
+// Render answers for Character quiz
 
-// function renderCharAnswers() {
-//   let eachChoice = charQuestions[currentCharQuestionIndex].cChoices;
-//   choices = document.querySelector(".choices");
-//   for (let q = 0; q < 4; q++) {
-//     choice = document.createElement("button");
-//     choice.className = "choice";
-//     choice.innerHTML = eachChoice[q];
-//     choices.appendChild(choice);
-//     choice.addEventListener("click", checkAnswer);
-//   }
-// }
+function renderCharAnswers() {
+  let eachChoice = charQuestions[currentCharQuestionIndex].cChoices;
+  choices = document.querySelector(".choices");
+  for (let q = 0; q < 4; q++) {
+    choice = document.createElement("button");
+    choice.className = "choice";
+    choice.innerHTML = eachChoice[q];
+    choices.appendChild(choice);
+    choice.addEventListener("click", checkCharAnswer);
+  }
+}
 
 // display next question
 function nextQuestion() {
@@ -288,14 +290,14 @@ function nextQuestion() {
   questionNumber.innerHTML = `Question ${currentQuestionNumber}`;
 }
 
-// // next char question
-// function nextCharQuestion() {
-//   clearCurrentQuestion();
-//   renderCharQuestion();
-//   currentCharQuestionIndex++;
-//   currentCharQuestionNumber++;
-//   questionNumber.innerHTML = `Question ${currentQuestionNumber}`;
-// }
+// next char question
+function nextCharQuestion() {
+  clearCurrentQuestion();
+  renderCharQuestion();
+  currentCharQuestionIndex++;
+  currentCharQuestionNumber++;
+  questionNumber.innerHTML = `Question ${currentCharQuestionNumber}`;
+}
 
 // remove current question content
 function clearCurrentQuestion() {
@@ -322,14 +324,14 @@ function checkAnswer(evt) {
   }
 }
 
-// function checkCharAnswer(evt){
-//     if(evt.target.innerHTML == currentCharQuestion.cAnswer){
-//         incrementScore();
-//         nextCharQuestion();
-//     } else {
-//         nextCharQuestion();
-//     }
-// }
+function checkCharAnswer(evt) {
+  if (evt.target.innerHTML == currentCharQuestion.cAnswer) {
+    incrementScore();
+    nextCharQuestion();
+  } else {
+    nextCharQuestion();
+  }
+}
 
 // allow user to play again once they have reached the end
 function endGame() {
@@ -345,7 +347,6 @@ function resetGame() {
   currentQuestionNumber = 0;
   score = 0;
   scoreBoard.innerHTML = `Score: ${score}/10`;
-  nextQuestion();
 }
 
 // show the user how they did
@@ -368,5 +369,4 @@ function renderResults() {
     results.innerHTML = `You got ${score} out of 10 right. Perfect Score! Enjoy a family dance!`;
     endGif.setAttribute("src", "gifs/famDance.gif");
   }
-  reset.addEventListener("click", resetGame);
 }
