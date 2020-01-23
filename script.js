@@ -1,15 +1,15 @@
-const game = document.querySelector(".game"); // entire game container // to change its display
-const quiz = document.querySelector(".quiz"); // quiz container // to append questions
-const start = document.querySelector(".start"); // start button // to initiate general info quiz game
-const go = document.querySelector(".go"); // go button // to initiate characters quiz game
-const end = document.getElementById("end"); // end container // to change its display
-const endText = document.getElementById("end-textbox"); // end container // to display custom results
-const reset = document.getElementById("reset"); // reset button // to start over
-const scoreBoard = document.querySelector(".score"); // scoreboard // to show updated score
-const questionNumber = document.querySelector(".question-number"); // question number // to display current number
-const results = document.querySelector(".results"); // results paragraph // to display at end
-const instructions = document.querySelector(".instructions"); // instructions // to change its display
-const endGif = document.querySelector(".gif"); // gif // to adjust according to score
+const game = document.querySelector(".game"); // entire game container --- to change its display
+const quiz = document.querySelector(".quiz"); // quiz container --- to append questions
+const start = document.querySelector(".start"); // start button ---to initiate general info quiz game
+const go = document.querySelector(".go"); // go button --- to initiate characters quiz game
+const end = document.getElementById("end"); // end container ---to change its display
+const endText = document.getElementById("end-textbox"); // end container --- to display custom results
+
+const scoreBoard = document.querySelector(".score"); // scoreboard --- to show updated score
+const questionNumber = document.querySelector(".question-number"); // question number  
+const results = document.querySelector(".results"); // results  
+const instructions = document.querySelector(".instructions"); // instructions  
+const endGif = document.querySelector(".gif"); // gif - to adjust according to score
 
 let score = 0; // score to be displayed
 

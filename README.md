@@ -28,3 +28,12 @@ More coming soon!
 <!-- Picture below of Bob's Burgers Trivia Game  -->
 
 ![alt text](https://github.com/BrianLoveGa/bobs_burgers_trivia/blob/master/images/bbtg3.png "Screen shot from the Belcher's Trivia game")
+
+<!-- Picture below of Bob's Burgers Trivia Game  -->
+
+![alt text](https://github.com/BrianLoveGa/bobs_burgers_trivia/blob/master/images/bbtg4.png "Screen shot from the Belcher's Trivia game")
+
+
+<!-- Picture below of Bob's Burgers Trivia Game  -->
+
+![alt text](https://github.com/BrianLoveGa/bobs_burgers_trivia/blob/master/images/bbtg5.png "Screen shot from the Belcher's Trivia game")
