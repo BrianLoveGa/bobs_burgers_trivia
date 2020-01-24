@@ -138,6 +138,19 @@ h3 {
 .spacerbar {
   height: 300px;
 }
+footer {
+  text-align: center;
+}
+.foot {
+  text-decoration: none;
+  color: black;
+}
+
+.foot:active,
+.foot:hover {
+  color: white;
+  background-color: black;
+}
 
 @media screen and (min-width: 600px) {
   .main {
