@@ -4,11 +4,11 @@ const start = document.querySelector(".start"); // start button ---to initiate g
 const go = document.querySelector(".go"); // go button --- to initiate characters quiz game
 const end = document.getElementById("end"); // end container ---to change its display
 const endText = document.getElementById("end-textbox"); // end container --- to display custom results
-
+const info = document.querySelector(".info"); // the info text under buttons
 const scoreBoard = document.querySelector(".score"); // scoreboard --- to show updated score
-const questionNumber = document.querySelector(".question-number"); // question number  
-const results = document.querySelector(".results"); // results  
-const instructions = document.querySelector(".instructions"); // instructions  
+const questionNumber = document.querySelector(".question-number"); // question number
+const results = document.querySelector(".results"); // results
+const instructions = document.querySelector(".instructions"); // instructions
 const endGif = document.querySelector(".gif"); // gif - to adjust according to score
 
 let score = 0; // score to be displayed
@@ -189,6 +189,7 @@ function startGame() {
   resetGame();
   game.style.display = "block";
   // hide irrelevant content
+  info.style.display = "none";
   instructions.style.display = "none";
   start.style.display = "none";
   go.style.display = "none";
@@ -202,6 +203,7 @@ function startCharGame() {
   resetGame();
   game.style.display = "block";
   // hide irrelevant content
+  info.style.display = "none";
   go.style.display = "none";
   instructions.style.display = "none";
   start.style.display = "none";
